@@ -16,22 +16,17 @@
 
     1. Clone the repository (or) Download the projects:
 
-    ```sh
-    git clone https://github.com/EsakkiRajM/React-Projects.git
-    ```    
+    ``` git clone https://github.com/EsakkiRajM/React-Projects.git ```
 
     2. Open the terminal and change the project path:   
     - `cd project-name`   
 
     3. Run the following commands:
 
-    ```
-    npm install
-    ```
+    
+    ``` npm install ```
 
-    ```
     npm run dev
-    ```
     
 
 - I have attached `Output image` for your reference  
