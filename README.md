@@ -14,20 +14,32 @@
 
  ## Installation steps:
 
-    1. Clone the repository (or) Download the projects:
+1. Clone the repository (or) Download the projects:
+
+    ``` bash
 
     git clone https://github.com/EsakkiRajM/React-Projects.git
 
-    2. Open the terminal and change the project path:   
+    ```
 
-     - cd project-name
+2. Navigate to the project directory:
 
-    3. Run the following commands:
+    ```bash
+    cd React-Projects
+    ```
 
-    
+3. Install dependencies:
+
+    ```bash
     npm install
+    ```
 
+4. Run the project:
+
+    ```bash
     npm run dev
+    ```
+
     
 
 - I have attached `Output image` for your reference  
