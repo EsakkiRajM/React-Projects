@@ -6,9 +6,21 @@
 
  - I completed this task using react
 
-  **Task URL:** 
+  **Technology used:**   
 
-   - I have attached `Output image` for your reference  
+ - React JS
+
+ **Task URL:**  https://userpricecards.netlify.app/
+
+ ## Installation
+
+   1. Clone the repository (or) Download the projects:
+
+   ```sh
+   git clone https://github.com/EsakkiRajM/React-Projects.git
+   ```
+
+- I have attached `Output image` for your reference  
 
    **Output:**
 
