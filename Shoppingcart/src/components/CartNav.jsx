@@ -1,3 +1,4 @@
+import Card from "./Card"
 import CardHeader from "./CardHeader"
 
 const CartNav = () => {
@@ -31,6 +32,7 @@ const CartNav = () => {
             </div>
         </nav>
         <CardHeader />
+        <Card />
         </div>
      
     
