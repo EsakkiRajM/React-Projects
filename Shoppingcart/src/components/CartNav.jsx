@@ -2,6 +2,15 @@ import Card from "./Card"
 import CardHeader from "./CardHeader"
 
 const CartNav = () => {
+
+    const dataCards = {
+        eachCards: [{
+            imgSrc: "./src/assets/ProductImages/bingo.webp",
+            pdtName: "Bingo",
+            price: "$40.00"
+        }]
+    }
+
     return (
         <div><nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container px-4 px-lg-5">
@@ -31,13 +40,22 @@ const CartNav = () => {
                 </div>
             </div>
         </nav>
-        <CardHeader />
-        <Card />
+            <CardHeader />
+            <div className='container-fluid'>
+            <div className='row d-flex justify-content-between m-5'>
+            {
+                dataCards.eachCards.map((pdtList, index) => {
+                    return   <Card pdtList = { pdtList } key={ index } />
+                })
+            }
+            </div>
+            </div>
+          
         </div>
-     
-    
-  )
-  
+
+
+    )
+
 }
 
 export default CartNav
