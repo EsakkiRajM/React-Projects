@@ -7,7 +7,8 @@ const CartNav = () => {
         eachCards: [{
             imgSrc: "../src/assets/ProductImages/bingo.webp",
             pdtName: "Bingo",
-            price: "$40.00"
+            oldPrice: "$8.00",
+            price: "$6.00"
         }]
     }
 
