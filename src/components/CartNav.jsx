@@ -1,80 +1,81 @@
 import Card from "./Card"
+import CardFooter from "./CardFooter"
 import CardHeader from "./CardHeader"
 
 const CartNav = () => {
 
     const dataCards = {
         eachCards: [{
-            imgSrc: "../public/bingo.webp",
+            imgSrc: "../public/ProductImages/bingo.webp",
             pdtName: "Bingo",
-            oldPrice: "$8.00",
-            price: "$6.00"
+            oldPrice: "₹40.00",
+            price: "₹35.00 only"
         }, 
         {
-            imgSrc: "../public/milkbikis.webp",
+            imgSrc: "../public/ProductImages/milkbikis.webp",
             pdtName: "Milk Bikis",
-            oldPrice: "$5.00",
-            price: "$4.00"
+            oldPrice: "₹20.00",
+            price: "₹18.00 only"
         },
         {
-            imgSrc: "../public/ponds.webp",
-            pdtName: "Milk Bikis",
-            oldPrice: "$5.00",
-            price: "$4.00"
+            imgSrc: "../public/ProductImages/ponds.webp",
+            pdtName: "Ponds Powder",
+            oldPrice: "₹25.00",
+            price: "₹23.00 only"
         },
         {
-            imgSrc: "../public/7up.webp",
-            pdtName: "Milk Bikis",
-            oldPrice: "$5.00",
-            price: "$4.00"
+            imgSrc: "../public/ProductImages/7up.webp",
+            pdtName: "7UP",
+            oldPrice: "₹33.00",
+            price: "₹30.00 only"
         },
         {
-            imgSrc: "../public/7up.jpeg",
-            pdtName: "Milk Bikis",
-            oldPrice: "$5.00",
-            price: "$4.00"
+            imgSrc: "../public/ProductImages/dairymilk.webp",
+            pdtName: "Dairy Milk",
+            oldPrice: "₹85.00",
+            price: "₹70.00 only"
         },
         {
-            imgSrc: "../public/milkbikis.webp",
-            pdtName: "Milk Bikis",
-            oldPrice: "$5.00",
-            price: "$4.00"
+            imgSrc: "../public/ProductImages/dove.webp",
+            pdtName: "Dove Shampoo",
+            oldPrice: "₹78.00",
+            price: "₹69.00 only"
         },
         {
-            imgSrc: "../public/milkbikis.webp",
-            pdtName: "Milk Bikis",
-            oldPrice: "$5.00",
-            price: "$4.00"
+            imgSrc: "../public/ProductImages/fogg.webp",
+            pdtName: "FOGG Perfume",
+            oldPrice: "₹247.00",
+            price: "₹199.00 only"
         },
         {
-            imgSrc: "../public/milkbikis.webp",
-            pdtName: "Milk Bikis",
-            oldPrice: "$5.00",
-            price: "$4.00"
+            imgSrc: "../public/ProductImages/goodday.webp",
+            pdtName: "Good Day",
+            oldPrice: "₹25.00",
+            price: "₹19.00 only"
         },
         {
-            imgSrc: "../public/milkbikis.webp",
-            pdtName: "Milk Bikis",
-            oldPrice: "$5.00",
-            price: "$4.00"
+            imgSrc: "../public/ProductImages/kitkat.webp",
+            pdtName: "Kit Kat",
+            oldPrice: "₹60.00",
+            price: "₹49.00 only"
         },
         {
-            imgSrc: "../public/milkbikis.webp",
-            pdtName: "Milk Bikis",
-            oldPrice: "$5.00",
-            price: "$4.00"
+            imgSrc: "../public/ProductImages/rin.webp",
+            pdtName: "Rin Powder",
+            oldPrice: "₹149.00",
+            price: "₹129.00 only"
         },
         {
-            imgSrc: "../public/milkbikis.webp",
-            pdtName: "Milk Bikis",
-            oldPrice: "$5.00",
-            price: "$4.00"
+            imgSrc: "../public/ProductImages/tiger.webp",
+            pdtName: "Tiger",
+            oldPrice: "₹20.00",
+            price: "₹19.00 only"
         },
         {
-            imgSrc: "../public/milkbikis.webp",
-            pdtName: "Milk Bikis",
-            oldPrice: "$5.00",
-            price: "$4.00"
+            imgSrc: "../public/ProductImages/gillette.webp",
+            pdtName: "Gillette",
+            oldPrice: "₹65.00",
+            price: "₹49.00 only"
         }
     ]
     }
@@ -118,6 +119,7 @@ const CartNav = () => {
             }
             </div>
             </div>
+            <CardFooter />
           
         </div>
 
