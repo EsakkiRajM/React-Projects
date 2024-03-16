@@ -9,12 +9,74 @@ const CartNav = () => {
             pdtName: "Bingo",
             oldPrice: "$8.00",
             price: "$6.00"
-        }, {
+        }, 
+        {
             imgSrc: "../src/assets/ProductImages/milkbikis.webp",
             pdtName: "Milk Bikis",
             oldPrice: "$5.00",
             price: "$4.00"
-        }]
+        },
+        {
+            imgSrc: "../src/assets/ProductImages/ponds.webp",
+            pdtName: "Milk Bikis",
+            oldPrice: "$5.00",
+            price: "$4.00"
+        },
+        {
+            imgSrc: "../src/assets/ProductImages/7up.webp",
+            pdtName: "Milk Bikis",
+            oldPrice: "$5.00",
+            price: "$4.00"
+        },
+        {
+            imgSrc: "../src/assets/ProductImages/7up.jpeg",
+            pdtName: "Milk Bikis",
+            oldPrice: "$5.00",
+            price: "$4.00"
+        },
+        {
+            imgSrc: "../src/assets/ProductImages/milkbikis.webp",
+            pdtName: "Milk Bikis",
+            oldPrice: "$5.00",
+            price: "$4.00"
+        },
+        {
+            imgSrc: "../src/assets/ProductImages/milkbikis.webp",
+            pdtName: "Milk Bikis",
+            oldPrice: "$5.00",
+            price: "$4.00"
+        },
+        {
+            imgSrc: "../src/assets/ProductImages/milkbikis.webp",
+            pdtName: "Milk Bikis",
+            oldPrice: "$5.00",
+            price: "$4.00"
+        },
+        {
+            imgSrc: "../src/assets/ProductImages/milkbikis.webp",
+            pdtName: "Milk Bikis",
+            oldPrice: "$5.00",
+            price: "$4.00"
+        },
+        {
+            imgSrc: "../src/assets/ProductImages/milkbikis.webp",
+            pdtName: "Milk Bikis",
+            oldPrice: "$5.00",
+            price: "$4.00"
+        },
+        {
+            imgSrc: "../src/assets/ProductImages/milkbikis.webp",
+            pdtName: "Milk Bikis",
+            oldPrice: "$5.00",
+            price: "$4.00"
+        },
+        {
+            imgSrc: "../src/assets/ProductImages/milkbikis.webp",
+            pdtName: "Milk Bikis",
+            oldPrice: "$5.00",
+            price: "$4.00"
+        }
+    ]
     }
 
     return (
@@ -48,7 +110,7 @@ const CartNav = () => {
         </nav>
             <CardHeader />
             <div className='container-fluid'>
-            <div className='row d-flex justify-content-between m-5'>
+            <div className='row d-flex justify-content-center text-center'>
             {
                 dataCards.eachCards.map((pdtList, index) => {
                     return   <Card pdtList = { pdtList } key={ index } />

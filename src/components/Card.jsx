@@ -2,8 +2,8 @@
 const Card = (props) => {
     console.log(props.pdtList.imgSrc);
     return (
-        
-                <div className="card m-4 col-lg-4 col-md-3 col-12" style={{ width: "15rem" }}>
+                <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div className="card m-4" style={{ width: "15rem" }}>
                     {/* <img src="./src/assets/ProductImages/bingo.webp" className="card-img-top img-fluid mt-2" alt="..." /> */}
                     <div>
                         <img src={props.pdtList.imgSrc} className="card-img-top img mt-2" alt="Product images" />
@@ -15,8 +15,9 @@ const Card = (props) => {
                         <p className="mx-3">
                                 {props.pdtList.price}
                         </p>
-                        <a href="#" className="btn btn-primary"></a>
+                        <button className="btn btn-outline-primary">Add to cart</button>
                     </div>
+                </div>
                 </div>
     )
 }
