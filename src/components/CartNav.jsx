@@ -9,6 +9,11 @@ const CartNav = () => {
             pdtName: "Bingo",
             oldPrice: "$8.00",
             price: "$6.00"
+        }, {
+            imgSrc: "../src/assets/ProductImages/milkbikis.webp",
+            pdtName: "Milk Bikis",
+            oldPrice: "$5.00",
+            price: "$4.00"
         }]
     }
 
