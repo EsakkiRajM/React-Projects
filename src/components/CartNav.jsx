@@ -5,73 +5,73 @@ const CartNav = () => {
 
     const dataCards = {
         eachCards: [{
-            imgSrc: "../public/ProductImages/bingo.webp",
+            imgSrc: "../public/bingo.webp",
             pdtName: "Bingo",
             oldPrice: "$8.00",
             price: "$6.00"
         }, 
         {
-            imgSrc: "../public/ProductImages/milkbikis.webp",
+            imgSrc: "../public/milkbikis.webp",
             pdtName: "Milk Bikis",
             oldPrice: "$5.00",
             price: "$4.00"
         },
         {
-            imgSrc: "../public/ProductImages/ponds.webp",
+            imgSrc: "../public/ponds.webp",
             pdtName: "Milk Bikis",
             oldPrice: "$5.00",
             price: "$4.00"
         },
         {
-            imgSrc: "../public/ProductImages/7up.webp",
+            imgSrc: "../public/7up.webp",
             pdtName: "Milk Bikis",
             oldPrice: "$5.00",
             price: "$4.00"
         },
         {
-            imgSrc: "../public/ProductImages/7up.jpeg",
+            imgSrc: "../public/7up.jpeg",
             pdtName: "Milk Bikis",
             oldPrice: "$5.00",
             price: "$4.00"
         },
         {
-            imgSrc: "../public/ProductImages/milkbikis.webp",
+            imgSrc: "../public/milkbikis.webp",
             pdtName: "Milk Bikis",
             oldPrice: "$5.00",
             price: "$4.00"
         },
         {
-            imgSrc: "../public/ProductImages/milkbikis.webp",
+            imgSrc: "../public/milkbikis.webp",
             pdtName: "Milk Bikis",
             oldPrice: "$5.00",
             price: "$4.00"
         },
         {
-            imgSrc: "../public/ProductImages/milkbikis.webp",
+            imgSrc: "../public/milkbikis.webp",
             pdtName: "Milk Bikis",
             oldPrice: "$5.00",
             price: "$4.00"
         },
         {
-            imgSrc: "../public/ProductImages/milkbikis.webp",
+            imgSrc: "../public/milkbikis.webp",
             pdtName: "Milk Bikis",
             oldPrice: "$5.00",
             price: "$4.00"
         },
         {
-            imgSrc: "../public/ProductImages/milkbikis.webp",
+            imgSrc: "../public/milkbikis.webp",
             pdtName: "Milk Bikis",
             oldPrice: "$5.00",
             price: "$4.00"
         },
         {
-            imgSrc: "../public/ProductImages/milkbikis.webp",
+            imgSrc: "../public/milkbikis.webp",
             pdtName: "Milk Bikis",
             oldPrice: "$5.00",
             price: "$4.00"
         },
         {
-            imgSrc: "../public/ProductImages/milkbikis.webp",
+            imgSrc: "../public/milkbikis.webp",
             pdtName: "Milk Bikis",
             oldPrice: "$5.00",
             price: "$4.00"
