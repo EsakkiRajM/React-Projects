@@ -1,4 +1,4 @@
-## React- Day -2: React   
+## React- Day -3: React hooks & states   
 
 **React Price card task**   
 
@@ -39,7 +39,7 @@
 4. Run the project:
 
     Run the following commands to see the output
-    
+
     ```bash
     npm run dev
     ```
