@@ -1,10 +1,18 @@
-import React from 'react'
 
-const Button = (onClick) => {
-    console.log(onClick);
+
+const Button = (props) => {
+
+  //console.log(props.btnCount);
+
   return (
     <div>
-        <button className="btn btn-outline-dark mb-3">Add to cart</button>
+      <button
+        className="btn btn-outline-dark mb-3"
+        onClick={props.onClick}
+        disabled={props.disabled}
+      >
+        {props.text}
+      </button>
     </div>
   )
 }

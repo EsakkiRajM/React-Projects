@@ -3,8 +3,14 @@ import Card from "./Card"
 import CardFooter from "./CardFooter"
 import CardHeader from "./CardHeader"
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
+import CartValue from "./CartValue"
+import { useState } from "react"
+import "./Card.css"
+
 
 const CartNav = () => {
+
+    const [cartValue, setCartValue] = useState(0);
 
     const dataCards = {
         eachCards: [{
@@ -12,7 +18,7 @@ const CartNav = () => {
             pdtName: "Bingo",
             oldPrice: "₹40.00",
             price: "₹35.00 only"
-        }, 
+        },
         {
             imgSrc: "../public/ProductImages/milkbikis.webp",
             pdtName: "Milk Bikis",
@@ -23,13 +29,13 @@ const CartNav = () => {
             imgSrc: "../public/ProductImages/ponds.webp",
             pdtName: "Ponds Powder",
             oldPrice: "₹25.00",
-            price: "₹23.00 only"
+            price: "₹19.00 only"
         },
         {
             imgSrc: "../public/ProductImages/7up.webp",
             pdtName: "7UP",
             oldPrice: "₹33.00",
-            price: "₹30.00 only"
+            price: "₹29.00 only"
         },
         {
             imgSrc: "../public/ProductImages/dairymilk.webp",
@@ -79,7 +85,7 @@ const CartNav = () => {
             oldPrice: "₹65.00",
             price: "₹49.00 only"
         }
-    ]
+        ]
     }
 
     return (
@@ -102,27 +108,33 @@ const CartNav = () => {
                         </li>
                     </ul>
                     <div className="d-flex">
-                        <button className="btn btn-outline-dark" type="submit">
-                            <FontAwesomeIcon icon={ faCartShopping } /> &nbsp;
+                        <div className="btn btn-outline-dark">
+                            <FontAwesomeIcon icon={faCartShopping} /> &nbsp;
                             Cart
-                            <span className="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
+                            <span className="badge bg-dark text-white ms-1 rounded-pill">
+                                <CartValue cartValue={ cartValue } />
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
             <CardHeader />
             <div className='container-fluid'>
-            <div className='row d-flex justify-content-center text-center'>
-            {
-                dataCards.eachCards.map((pdtList, index) => {
-                    return   <Card pdtList = { pdtList } key={ index } />
-                })
-            }
-            </div>
+                <div className='row d-flex justify-content-center text-center'>
+                    {
+                        dataCards.eachCards.map((pdtList, index) => {
+                            return <Card pdtList={pdtList} 
+                            key={index} 
+                            cartValue={cartValue}
+                            setCartValue={setCartValue}/>
+                        })
+                    }
+
+                </div>
             </div>
             <CardFooter />
-          
+
         </div>
 
 
