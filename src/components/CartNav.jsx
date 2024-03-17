@@ -1,6 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Card from "./Card"
 import CardFooter from "./CardFooter"
 import CardHeader from "./CardHeader"
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
 
 const CartNav = () => {
 
@@ -101,7 +103,7 @@ const CartNav = () => {
                     </ul>
                     <div className="d-flex">
                         <button className="btn btn-outline-dark" type="submit">
-                            <i className="bi-cart-fill me-1"></i>
+                            <FontAwesomeIcon icon={ faCartShopping } /> &nbsp;
                             Cart
                             <span className="badge bg-dark text-white ms-1 rounded-pill">0</span>
                         </button>

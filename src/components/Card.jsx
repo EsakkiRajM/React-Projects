@@ -1,6 +1,14 @@
+import { useState } from "react"
+import Button from "./Button"
+import DisplayCount from "./DisplayCount";
 
 const Card = (props) => {
-    
+
+    const [btnCount, setCount ] = useState(0);
+
+    const handleAddtoCart = (() => {
+          setCount(btnCount + 1);
+    })
     return (    
                 
                 <div className="col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12">
@@ -17,7 +25,8 @@ const Card = (props) => {
                             <span className="d-block text-danger"> <del> { props.pdtList.oldPrice } </del></span>
                                 <strong className="text-success"> {props.pdtList.price} </strong>
                         </p>
-                        <button className="btn btn-outline-dark">Add to cart</button>
+                        
+                        <Button onClick = { handleAddtoCart } />
                     </div>
                 </div>
                 </div>
