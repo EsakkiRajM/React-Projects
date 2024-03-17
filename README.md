@@ -1,6 +1,6 @@
 ## React- Day -3: React hooks & states   
 
-**React Price card task**   
+**React Shopping cart task**   
 
  - I have completed and submitted Shopping cart task, kindly check and verify it.   
 
