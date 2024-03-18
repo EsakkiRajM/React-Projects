@@ -7,20 +7,20 @@ import CartValue from "./CartValue"
 import { useState } from "react"
 import "./Card.css"
 
-import { bingo } from "../ProductImages/bingo.webp"
-import { milkbikis } from "../ProductImages/milkbikis.webp"
-import { ponds } from "../ProductImages/ponds.webp"
-import { sevenup } from "../ProductImages/7up.webp"
-import { dairymilk } from "../ProductImages/dairymilk.webp"
-import { dove } from "../ProductImages/dove.webp"
-import { fogg } from "../ProductImages/fogg.webp"
-import { goodday } from "../ProductImages/goodday.webp"
-import { kitkat } from "../ProductImages/kitkat.webp"
-import { rin } from "../ProductImages/rin.webp"
-import { tiger } from "../ProductImages/tiger.webp"
-import { gillette } from "../ProductImages/gillette.webp"
+// import { bingo } from "../../public/ProductImages/bingo.webp"
+// import { milkbikis } from "../../public/ProductImages/milkbikis.webp"
+// import { ponds } from "../../public/ProductImages/ponds.webp"
+// import { sevenup } from "../../public/ProductImages/7up.webp"
+// import { dairymilk } from "../../public/ProductImages/dairymilk.webp"
+// import { dove } from "../../public/ProductImages/dove.webp"
+// import { fogg } from "../../public/ProductImages/fogg.webp"
+// import { goodday } from "../../public/ProductImages/goodday.webp"
+// import { kitkat } from "../../public/ProductImages/kitkat.webp"
+// import { rin } from "../../public/ProductImages/rin.webp"
+// import { tiger } from "../../public/ProductImages/tiger.webp"
+// import { gillette } from "../../public/ProductImages/gillette.webp"
 
-export { bingo, milkbikis, ponds, sevenup, dairymilk, dove, fogg, goodday, kitkat, rin, tiger, gillette };
+//export { bingo, milkbikis, ponds, sevenup, dairymilk, dove, fogg, goodday, kitkat, rin, tiger, gillette };
 
 
 const CartNav = () => {
@@ -29,73 +29,73 @@ const CartNav = () => {
 
     const dataCards = {
         eachCards: [{
-            imgSrc: bingo ,
+            imgSrc: "../../public/ProductImages/bingo.webp",
             pdtName: "Bingo",
             oldPrice: "₹40.00",
             price: "₹35.00 only"
         },
         {
-            imgSrc: milkbikis,
+            imgSrc: "../../public/ProductImages/milkbikis.webp",
             pdtName: "Milk Bikis",
             oldPrice: "₹20.00",
             price: "₹18.00 only"
         },
         {
-            imgSrc: ponds,
+            imgSrc: "../../public/ProductImages/ponds.webp",
             pdtName: "Ponds Powder",
             oldPrice: "₹25.00",
             price: "₹19.00 only"
         },
         {
-            imgSrc: sevenup,
+            imgSrc: "../../public/ProductImages/7up.webp",
             pdtName: "7UP",
             oldPrice: "₹33.00",
             price: "₹29.00 only"
         },
         {
-            imgSrc: dairymilk,
+            imgSrc: "../../public/ProductImages/dairymilk.webp",
             pdtName: "Dairy Milk",
             oldPrice: "₹85.00",
             price: "₹70.00 only"
         },
         {
-            imgSrc: dove,
+            imgSrc: "../../public/ProductImages/dove.webp",
             pdtName: "Dove Shampoo",
             oldPrice: "₹78.00",
             price: "₹69.00 only"
         },
         {
-            imgSrc: fogg,
+            imgSrc: "../../public/ProductImages/fogg.webp",
             pdtName: "FOGG Perfume",
             oldPrice: "₹247.00",
             price: "₹199.00 only"
         },
         {
-            imgSrc: goodday,
+            imgSrc: "../../public/ProductImages/goodday.webp",
             pdtName: "Good Day",
             oldPrice: "₹25.00",
             price: "₹19.00 only"
         },
         {
-            imgSrc: kitkat,
+            imgSrc: "../../public/ProductImages/kitkat.webp",
             pdtName: "Kit Kat",
             oldPrice: "₹60.00",
             price: "₹49.00 only"
         },
         {
-            imgSrc: rin,
+            imgSrc: "../../public/ProductImages/rin.webp",
             pdtName: "Rin Powder",
             oldPrice: "₹149.00",
             price: "₹129.00 only"
         },
         {
-            imgSrc: tiger,
+            imgSrc: "../../public/ProductImages/tiger.webp",
             pdtName: "Tiger",
             oldPrice: "₹20.00",
             price: "₹19.00 only"
         },
         {
-            imgSrc: gillette,
+            imgSrc: "../../public/ProductImages/gillette.webp",
             pdtName: "Gillette",
             oldPrice: "₹65.00",
             price: "₹49.00 only"
