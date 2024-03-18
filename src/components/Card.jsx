@@ -5,8 +5,6 @@ import "./Card.css"
 
 const Card = (props) => {
 
-    //console.log(props);
-
     const [isAddedToCart, setIsAddedToCart] = useState(false);
 
     const handleAddToCart = () => {
@@ -18,7 +16,6 @@ const Card = (props) => {
         setIsAddedToCart(false);
         props.setCartValue(props.cartValue-1);
     };
-
 
     return (
 
@@ -52,5 +49,4 @@ const Card = (props) => {
         </div>
     )
 }
-
 export default Card
