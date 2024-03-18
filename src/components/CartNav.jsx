@@ -20,6 +20,8 @@ import { rin } from "../ProductImages/rin.webp"
 import { tiger } from "../ProductImages/tiger.webp"
 import { gillette } from "../ProductImages/gillette.webp"
 
+export { bingo, milkbikis, ponds, sevenup, dairymilk, dove, fogg, goodday, kitkat, rin, tiger, gillette };
+
 
 const CartNav = () => {
 
