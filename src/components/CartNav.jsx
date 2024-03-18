@@ -7,18 +7,18 @@ import CartValue from "./CartValue"
 import { useState } from "react"
 import "./Card.css"
 
-// import { bingo } from "../../public/ProductImages/bingo.webp"
-// import { milkbikis } from "../../public/ProductImages/milkbikis.webp"
-// import { ponds } from "../../public/ProductImages/ponds.webp"
-// import { sevenup } from "../../public/ProductImages/7up.webp"
-// import { dairymilk } from "../../public/ProductImages/dairymilk.webp"
-// import { dove } from "../../public/ProductImages/dove.webp"
-// import { fogg } from "../../public/ProductImages/fogg.webp"
-// import { goodday } from "../../public/ProductImages/goodday.webp"
-// import { kitkat } from "../../public/ProductImages/kitkat.webp"
-// import { rin } from "../../public/ProductImages/rin.webp"
-// import { tiger } from "../../public/ProductImages/tiger.webp"
-// import { gillette } from "../../public/ProductImages/gillette.webp"
+import  bingo  from "../../public/ProductImages/bingo.webp";
+import  milkbikis  from "../../public/ProductImages/milkbikis.webp";
+import  ponds  from "../../public/ProductImages/ponds.webp";
+import  sevenup  from "../../public/ProductImages/7up.webp";
+import  dairymilk  from "../../public/ProductImages/dairymilk.webp";
+import  dove  from "../../public/ProductImages/dove.webp";
+import  fogg  from "../../public/ProductImages/fogg.webp";
+import  goodday  from "../../public/ProductImages/goodday.webp";
+import  kitkat  from "../../public/ProductImages/kitkat.webp";
+import  rin  from "../../public/ProductImages/rin.webp";
+import  tiger  from "../../public/ProductImages/tiger.webp";
+import  gillette  from "../../public/ProductImages/gillette.webp";
 
 //export { bingo, milkbikis, ponds, sevenup, dairymilk, dove, fogg, goodday, kitkat, rin, tiger, gillette };
 
@@ -29,80 +29,80 @@ const CartNav = () => {
 
     const dataCards = {
         eachCards: [{
-            imgSrc: "../../public/ProductImages/bingo.webp",
+            imgSrc: bingo ,
             pdtName: "Bingo",
             oldPrice: "₹40.00",
             price: "₹35.00 only"
         },
         {
-            imgSrc: "../../public/ProductImages/milkbikis.webp",
+            imgSrc: milkbikis,
             pdtName: "Milk Bikis",
             oldPrice: "₹20.00",
             price: "₹18.00 only"
         },
         {
-            imgSrc: "../../public/ProductImages/ponds.webp",
+            imgSrc: ponds,
             pdtName: "Ponds Powder",
             oldPrice: "₹25.00",
             price: "₹19.00 only"
         },
         {
-            imgSrc: "../../public/ProductImages/7up.webp",
+            imgSrc: sevenup,
             pdtName: "7UP",
             oldPrice: "₹33.00",
             price: "₹29.00 only"
         },
         {
-            imgSrc: "../../public/ProductImages/dairymilk.webp",
+            imgSrc: dairymilk,
             pdtName: "Dairy Milk",
             oldPrice: "₹85.00",
             price: "₹70.00 only"
         },
         {
-            imgSrc: "../../public/ProductImages/dove.webp",
+            imgSrc: dove,
             pdtName: "Dove Shampoo",
             oldPrice: "₹78.00",
             price: "₹69.00 only"
         },
         {
-            imgSrc: "../../public/ProductImages/fogg.webp",
+            imgSrc: fogg,
             pdtName: "FOGG Perfume",
             oldPrice: "₹247.00",
             price: "₹199.00 only"
         },
         {
-            imgSrc: "../../public/ProductImages/goodday.webp",
+            imgSrc: goodday,
             pdtName: "Good Day",
             oldPrice: "₹25.00",
             price: "₹19.00 only"
         },
         {
-            imgSrc: "../../public/ProductImages/kitkat.webp",
+            imgSrc: kitkat,
             pdtName: "Kit Kat",
             oldPrice: "₹60.00",
             price: "₹49.00 only"
         },
         {
-            imgSrc: "../../public/ProductImages/rin.webp",
+            imgSrc: rin,
             pdtName: "Rin Powder",
             oldPrice: "₹149.00",
             price: "₹129.00 only"
         },
         {
-            imgSrc: "../../public/ProductImages/tiger.webp",
+            imgSrc: tiger,
             pdtName: "Tiger",
             oldPrice: "₹20.00",
             price: "₹19.00 only"
         },
         {
-            imgSrc: "../../public/ProductImages/gillette.webp",
+            imgSrc: gillette,
             pdtName: "Gillette",
             oldPrice: "₹65.00",
             price: "₹49.00 only"
         }
         ]
     }
-    return (
+        return (
         <div><nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container px-4 px-lg-5">
                 <a className="navbar-brand" href="#!">ES Hyper Market</a>
