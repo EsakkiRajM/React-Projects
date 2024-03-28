@@ -41,8 +41,11 @@ const TodoCards = ({ todo, updateTodo, deleteClick, filterStatus, changeStatus, 
     updateTodoStatus(todo.id, status === 'Completed');
   };
 
+  
+
   return (
     <div>
+    
         <div className='card m-4' style={{ width: '18rem' }}>
         <div className='card-body'>
           {isEditing ? (

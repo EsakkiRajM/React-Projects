@@ -3,7 +3,7 @@ import React from 'react';
 const TodoList = ({ filteredTodo, changeStatus }) => {
   return (
     <div>
-      <div className='container mt-5'>
+      {/* <div className='container mt-5'>
         <div className='row'>
           <div className='float-start align-items-col-center justify-content-col-center'>My Todos
             <div className='float-end   align-items-col-center justify-content-col-center'>
@@ -16,7 +16,7 @@ const TodoList = ({ filteredTodo, changeStatus }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Render filtered todos */}
       {/* {filteredTodo.map((todo) => (
         <div key={todo.id} className='card m-4' style={{ width: '18rem' }}>

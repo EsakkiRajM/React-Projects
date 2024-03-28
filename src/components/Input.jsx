@@ -26,7 +26,9 @@ const Input = () => {
       completed: false
     }
   ]);
-  const [filteredTodo, setFilteredTodo] = useState(todo);
+  const [filteredTodo, setFilteredTodo] = useState([todo]);
+
+  //console.log(filteredTodo);
 
   //console.log(filteredTodo);
 
@@ -68,17 +70,24 @@ const Input = () => {
 
     if (status === "All") {
       setFilteredTodo(todo);
+      //setTodo(todo);
       // console.log(status);
-      // console.log(todo);
+       //console.log(todo);
     } else {
       const filtered = todo.filter((todos) =>
         status === 'Completed' ? todos.completed : !todos.completed
         );
       setFilteredTodo(filtered);
+      
       // console.log(status);
-      // console.log(filtered);
+       console.log(filtered);
     }
+     //console.log(filtered);
+    //setTodo([filtered]);
   };
+
+  
+
 
   //
 
@@ -118,6 +127,20 @@ const Input = () => {
           </div>
         </div>
       </form>
+      <div className='container mt-5'>
+        <div className='row'>
+          <div className='float-start align-items-col-center justify-content-col-center'>My Todos
+            <div className='float-end   align-items-col-center justify-content-col-center'>
+              <span className='m-2'> Status Filter: &nbsp;</span>
+              <select name="" id="" className='form-select' onChange={changeStatus}>
+                <option value="All">All</option>
+                <option value="Completed">Completed</option>
+                <option value="Not Completed">Not Completed</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
       <TodoList todo={todo}
         changeStatus={changeStatus}
         filteredTodo = { filteredTodo }
