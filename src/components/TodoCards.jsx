@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 
-const TodoCards = ({ todo, updateTodo, deleteClick, filterStatus }) => {
+const TodoCards = ({ todo, updateTodo, deleteClick, filterStatus, changeStatus, updateTodoStatus }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editedTodo, setEditedTodo] = useState({ ...todo });
+  const [selectedStatus, setSelectedStatus] = useState(todo.completed ? 'Completed' : 'Not Completed');
+
+  useEffect(() => {
+    setSelectedStatus(todo.completed ? 'Completed' : 'Not Completed');
+  }, [todo.completed]);
+
+  //console.log(typeof changeStatus)
   //console.log(todo)
 
   const handleEditClick = () => {
@@ -27,11 +35,15 @@ const TodoCards = ({ todo, updateTodo, deleteClick, filterStatus }) => {
     deleteClick(todo.id);
   }
 
-  //console.log(filterStatus);
+  const handleStatusChange = (e) => {
+    const status = e.target.value;
+    setSelectedStatus(status);
+    updateTodoStatus(todo.id, status === 'Completed');
+  };
 
   return (
     <div>
-      <div className='card m-4' style={{ width: '18rem' }}>
+        <div className='card m-4' style={{ width: '18rem' }}>
         <div className='card-body'>
           {isEditing ? (
             <div>
@@ -62,9 +74,12 @@ const TodoCards = ({ todo, updateTodo, deleteClick, filterStatus }) => {
               <div>
                 <div className='d-flex align-items-center'>
                   Status:
-                  <select name='' id='' className='mx-2 form-select'>
-                    <option value='Not Completed'>Not Completed</option>
-                    <option value='Completed'>Completed</option>
+                  <select name='' id='' className='mx-2 form-select'
+                   value={selectedStatus}
+                   onChange={handleStatusChange}
+                  >
+                    <option value="Not Completed"  >Not Completed</option>
+                    <option value="Completed" >Completed</option>
                   </select>
                 </div>
               </div>
@@ -79,8 +94,9 @@ const TodoCards = ({ todo, updateTodo, deleteClick, filterStatus }) => {
           )}
         </div>
       </div>
-    </div>
-  );
+   
+       </div>
+        );
 };
 
 export default TodoCards;

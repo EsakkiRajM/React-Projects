@@ -62,58 +62,33 @@ const Input = () => {
     setTodo(todo.filter((del) => del.id !== id));
   };
 
-  // const filterStatus = (todoList) => {
-  //   //setTodo(todoList);
-  //   console.log(todoList);
-  // }
-
-
-
-  // const changeStatus = (event) => {
-
-  //   const status = event.target.value;
-
-  //   //console.log(event);
-
-  //   if (status === "All") {
-  //     setFilteredTodo(todo);
-  //     //setTodo(filteredTodo);
-  //     //console.log(status);
-  //   } else {
-  //     const filtered = todo.filter((todos) =>
-  //       status === 'Completed' ? todos.completed : !todos.completed
-
-  //     );
-  //     //console.log(status);
-  //     setFilteredTodo(filtered);
-  //     //setTodo(filteredTodo);
-  //     //console.log(filtered);
-  //   }
-
-  //   //setTodo(filteredTodo);
-  //   console.log(filteredTodo);
-
-  // }
-
-  // //filterStatus(filteredTodo);
-
-  // //filterStatus(todo);
-
   //
   const changeStatus = (event) => {
     const status = event.target.value;
 
     if (status === "All") {
       setFilteredTodo(todo);
+      // console.log(status);
+      // console.log(todo);
     } else {
       const filtered = todo.filter((todos) =>
         status === 'Completed' ? todos.completed : !todos.completed
-      );
+        );
       setFilteredTodo(filtered);
+      // console.log(status);
+      // console.log(filtered);
     }
   };
 
   //
+
+  const updateTodoStatus = (id, status) => {
+    const updatedCompletedStatus = todo.map(item =>
+      item.id === id ? { ...item, completed: status } : item
+    );
+    setTodo(updatedCompletedStatus);
+    console.log(updatedCompletedStatus);
+  };
 
 
   return (
@@ -155,6 +130,7 @@ const Input = () => {
                 updateTodo={updateTodo} deleteClick={deleteClick}
                 changeStatus={changeStatus}
                 filteredTodo = { filteredTodo }
+                updateTodoStatus = { updateTodoStatus }
               />
             ))}
           </div>

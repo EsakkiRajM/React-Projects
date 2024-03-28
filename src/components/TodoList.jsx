@@ -18,7 +18,7 @@ const TodoList = ({ filteredTodo, changeStatus }) => {
         </div>
       </div>
       {/* Render filtered todos */}
-      {filteredTodo.map((todo) => (
+      {/* {filteredTodo.map((todo) => (
         <div key={todo.id} className='card m-4' style={{ width: '18rem' }}>
           <div className='card-body'>
             <p>Name: {todo.name}</p>
@@ -43,7 +43,7 @@ const TodoList = ({ filteredTodo, changeStatus }) => {
             </div>
           </div>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };
